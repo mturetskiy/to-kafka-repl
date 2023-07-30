@@ -1,0 +1,3 @@
+spring.main.web-environment: false
+amps.server.host: 127.0.0.1
+amps.server.port: 5511
