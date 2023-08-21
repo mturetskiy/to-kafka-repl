@@ -1,0 +1,4 @@
+kafka:
+  listener:
+    bootstrap-servers: localhost:8097,localhost:8098,localhost:8099
+    topic: test-topic

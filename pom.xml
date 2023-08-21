@@ -18,6 +18,7 @@
     <modules>
         <module>amps-simulator</module>
         <module>amps-client</module>
+        <module>kafka-header-poc</module>
     </modules>
 
     <properties>
