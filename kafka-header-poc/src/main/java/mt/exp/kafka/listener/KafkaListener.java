@@ -49,6 +49,7 @@ public class KafkaListener {
                 long lastOffset1 = kafkaConsumer.position(tp1);
                 log.info("Discovered last offset for partiotion 1: {}", lastOffset1);
                 kafkaConsumer.seek(tp1, lastOffset1 - 1);
+//                kafkaConsumer.endOffsets();
 
                 long lastOffset2 = kafkaConsumer.position(tp2);
                 log.info("Discovered last offset for partiotion 2: {}", lastOffset2);

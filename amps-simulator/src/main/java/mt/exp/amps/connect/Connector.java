@@ -32,6 +32,7 @@ public class Connector {
             try (ServerSocket serverSocket = new ServerSocket(acceptPort)) {
                 final AtomicInteger connections = new AtomicInteger();
                 Integer rcvbuff = serverSocket.getOption(StandardSocketOptions.SO_RCVBUF);
+                serverSocket.setOption(StandardSocketOptions.SO_KEEPALIVE, true);
                 Integer sndbuff = 0;
 //                Integer sndbuff = serverSocket.getOption(StandardSocketOptions.SO_SNDBUF);
                 log.info("rcvbuff: {}, sndbuff: {}", rcvbuff, sndbuff);
